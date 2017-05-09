@@ -63,7 +63,7 @@ namespace MultiFaceRec
 
         private void button3_Click(object sender, EventArgs e)
         {
-            comboBox_brate.DataSource = list_baudrate;
+            comboBox_brate.SelectedIndex = 4;
             comboBox_data.DataSource = list_data_bits;
             comboBox_parity.DataSource = list_parity;
             comboBox_port.DataSource = list_stop_bits;

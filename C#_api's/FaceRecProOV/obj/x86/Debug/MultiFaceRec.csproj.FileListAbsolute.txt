@@ -92,3 +92,5 @@ H:\brian\Documents\MEEC\lab_integrados_II\c#_projects\FaceRecProOV\obj\x86\Debug
 H:\brian\Documents\MEEC\lab_integrados_II\c#_projects\FaceRecProOV\obj\x86\Debug\MultiFaceRec.csproj.GenerateResource.Cache
 H:\brian\Documents\MEEC\lab_integrados_II\c#_projects\FaceRecProOV\obj\x86\Debug\MultiFaceRec.AboutForm.resources
 H:\brian\Documents\MEEC\lab_integrados_II\c#_projects\FaceRecProOV\obj\x86\Debug\MultiFaceRec.SerialForm.resources
+H:\brian\Documents\MEEC\lab_integrados_II\1617-MEEC-LI2-9575-9689-9980-14252\C#_api's\FaceRecProOV\obj\x86\Debug\MultiFaceRec.exe
+H:\brian\Documents\MEEC\lab_integrados_II\1617-MEEC-LI2-9575-9689-9980-14252\C#_api's\FaceRecProOV\obj\x86\Debug\MultiFaceRec.pdb
