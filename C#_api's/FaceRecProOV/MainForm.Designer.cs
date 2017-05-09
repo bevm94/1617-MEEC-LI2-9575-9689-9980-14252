@@ -58,10 +58,9 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(116, 247);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(87, 201);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 38);
+            this.button2.Size = new System.Drawing.Size(87, 31);
             this.button2.TabIndex = 3;
             this.button2.Text = "2. Add face";
             this.button2.UseVisualStyleBackColor = true;
@@ -69,10 +68,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 209);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(67, 170);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 22);
+            this.textBox1.Size = new System.Drawing.Size(107, 20);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "Insert new user name";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -83,11 +81,9 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.imageBox1);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Location = new System.Drawing.Point(453, 78);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(340, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(245, 298);
+            this.groupBox1.Size = new System.Drawing.Size(184, 242);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Training: ";
@@ -95,20 +91,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 213);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(11, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Name: ";
             // 
             // imageBox1
             // 
             this.imageBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBox1.Location = new System.Drawing.Point(15, 22);
-            this.imageBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.imageBox1.Location = new System.Drawing.Point(11, 18);
             this.imageBox1.Name = "imageBox1";
-            this.imageBox1.Size = new System.Drawing.Size(217, 164);
+            this.imageBox1.Size = new System.Drawing.Size(163, 134);
             this.imageBox1.TabIndex = 5;
             this.imageBox1.TabStop = false;
             // 
@@ -119,11 +113,9 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(706, 78);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(530, 63);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(279, 298);
+            this.groupBox2.Size = new System.Drawing.Size(209, 242);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Results: ";
@@ -133,10 +125,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(12, 28);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(9, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(233, 18);
+            this.label5.Size = new System.Drawing.Size(197, 15);
             this.label5.TabIndex = 17;
             this.label5.Text = "Persons present in the scene:";
             // 
@@ -145,10 +136,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(12, 65);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(9, 53);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 23);
+            this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 16;
             this.label4.Text = "Nobody";
             // 
@@ -157,10 +147,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(217, 153);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(163, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 20);
+            this.label3.Size = new System.Drawing.Size(16, 16);
             this.label3.TabIndex = 15;
             this.label3.Text = "0";
             // 
@@ -168,20 +157,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 113);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 18);
+            this.label2.Size = new System.Drawing.Size(179, 15);
             this.label2.TabIndex = 14;
             this.label2.Text = "Number of faces detected: ";
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(112, 220);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(27, 137);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 65);
+            this.button1.Size = new System.Drawing.Size(110, 53);
             this.button1.TabIndex = 2;
             this.button1.Text = "1. Detect and recognize";
             this.button1.UseVisualStyleBackColor = true;
@@ -190,12 +177,12 @@
             // imageBoxFrameGrabber
             // 
             this.imageBoxFrameGrabber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBoxFrameGrabber.Location = new System.Drawing.Point(13, 78);
-            this.imageBoxFrameGrabber.Margin = new System.Windows.Forms.Padding(4);
+            this.imageBoxFrameGrabber.Location = new System.Drawing.Point(10, 63);
             this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
-            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(426, 295);
+            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(320, 240);
             this.imageBoxFrameGrabber.TabIndex = 4;
             this.imageBoxFrameGrabber.TabStop = false;
+            this.imageBoxFrameGrabber.Click += new System.EventHandler(this.imageBoxFrameGrabber_Click);
             // 
             // menuStrip1
             // 
@@ -204,7 +191,8 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1066, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -217,52 +205,51 @@
             this.aboutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // serialPortConfigurationToolStripMenuItem
             // 
             this.serialPortConfigurationToolStripMenuItem.Name = "serialPortConfigurationToolStripMenuItem";
-            this.serialPortConfigurationToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.serialPortConfigurationToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.serialPortConfigurationToolStripMenuItem.Text = "Serial Port configuration";
             this.serialPortConfigurationToolStripMenuItem.Click += new System.EventHandler(this.serialPortConfigurationToolStripMenuItem_Click);
             // 
             // bluetoothConfigurationToolStripMenuItem
             // 
             this.bluetoothConfigurationToolStripMenuItem.Name = "bluetoothConfigurationToolStripMenuItem";
-            this.bluetoothConfigurationToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.bluetoothConfigurationToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bluetoothConfigurationToolStripMenuItem.Text = "Bluetooth configuration";
             // 
             // webcamToolStripMenuItem
             // 
             this.webcamToolStripMenuItem.Name = "webcamToolStripMenuItem";
-            this.webcamToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.webcamToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.webcamToolStripMenuItem.Text = "Webcam";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1066, 445);
+            this.ClientSize = new System.Drawing.Size(800, 362);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.imageBoxFrameGrabber);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.Text = "Serg3ant\'s face detector and recgonizer :D";
             this.groupBox1.ResumeLayout(false);

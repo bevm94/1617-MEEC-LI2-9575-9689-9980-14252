@@ -247,6 +247,11 @@ namespace MultiFaceRec
             aboutform.Show();
         }
 
+        private void imageBoxFrameGrabber_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
 
     }
