@@ -40,9 +40,10 @@
             this.comboBox_parity = new System.Windows.Forms.ComboBox();
             this.comboBox_stop = new System.Windows.Forms.ComboBox();
             this.comboBox_f_control = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ok_serial_bt = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bt_default = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -158,16 +159,16 @@
             this.comboBox_f_control.Size = new System.Drawing.Size(121, 24);
             this.comboBox_f_control.TabIndex = 11;
             // 
-            // button1
+            // ok_serial_bt
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(424, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 51);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ok_serial_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ok_serial_bt.Location = new System.Drawing.Point(424, 37);
+            this.ok_serial_bt.Name = "ok_serial_bt";
+            this.ok_serial_bt.Size = new System.Drawing.Size(110, 51);
+            this.ok_serial_bt.TabIndex = 12;
+            this.ok_serial_bt.Text = "OK";
+            this.ok_serial_bt.UseVisualStyleBackColor = true;
+            this.ok_serial_bt.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -191,14 +192,26 @@
             this.bt_default.UseVisualStyleBackColor = true;
             this.bt_default.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(424, 288);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 31);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // SerialForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(606, 331);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bt_default);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ok_serial_bt);
             this.Controls.Add(this.comboBox_f_control);
             this.Controls.Add(this.comboBox_stop);
             this.Controls.Add(this.comboBox_parity);
@@ -213,6 +226,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SerialForm";
             this.Text = "SerialForm";
+            this.Load += new System.EventHandler(this.SerialForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,8 +246,9 @@
         private System.Windows.Forms.ComboBox comboBox_parity;
         private System.Windows.Forms.ComboBox comboBox_stop;
         private System.Windows.Forms.ComboBox comboBox_f_control;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ok_serial_bt;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button bt_default;
+        private System.Windows.Forms.Button button1;
     }
 }

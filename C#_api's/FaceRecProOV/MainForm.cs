@@ -15,6 +15,7 @@ using Emgu.CV.Structure;
 using Emgu.CV.CvEnum;
 using System.IO;
 using System.Diagnostics;
+using System.IO.Ports;
 
 namespace MultiFaceRec
 {
@@ -218,6 +219,7 @@ namespace MultiFaceRec
                     //Show the faces procesed and recognized
                     imageBoxFrameGrabber.Image = currentFrame;
                     label4.Text = names;
+                    if (serialPort1.IsOpen) serialPort1.Write(names);
                     names = "";
                     //Clear the list(vector) of names
                     NamePersons.Clear();
@@ -227,13 +229,28 @@ namespace MultiFaceRec
         private void serialPortConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Create a new instance of the Form2 class
-            SerialForm serialform = new SerialForm();
-
+            SerialForm serialform = new SerialForm(serialPort1);
+    
             // Show the settings form
             serialform.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imageBoxFrameGrabber_Click (object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click (object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label4_Click (object sender, EventArgs e)
         {
 
         }
@@ -245,6 +262,21 @@ namespace MultiFaceRec
 
             // Show the settings form
             aboutform.Show();
+        }
+
+        private void imageBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_serial_start_handler(object sender, EventArgs e)
+        {
+            serialPort1.Open();
         }
 
         
