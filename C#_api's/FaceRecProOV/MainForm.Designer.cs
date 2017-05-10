@@ -177,14 +177,16 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(112, 220);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 65);
             this.button1.TabIndex = 2;
-            this.button1.Text = "1. Detect and recognize";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "1. Detect and recognize!";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // imageBoxFrameGrabber
