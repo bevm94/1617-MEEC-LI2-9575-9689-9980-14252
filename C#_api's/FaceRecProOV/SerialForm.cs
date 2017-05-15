@@ -82,7 +82,6 @@ namespace MultiFaceRec
             comboBox_parity.Text = "None" ;
             comboBox_f_control.Text = "None";
             comboBox_stop.Text = "One";
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
