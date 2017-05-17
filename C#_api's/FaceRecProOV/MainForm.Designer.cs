@@ -74,7 +74,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Location = new System.Drawing.Point(116, 247);
+            this.button2.Location = new System.Drawing.Point(141, 252);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 38);
@@ -88,7 +88,7 @@
             this.textBox1.Location = new System.Drawing.Point(89, 209);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 22);
+            this.textBox1.Size = new System.Drawing.Size(168, 22);
             this.textBox1.TabIndex = 7;
             this.textBox1.Text = "Insert new user name";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -103,7 +103,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(245, 298);
+            this.groupBox1.Size = new System.Drawing.Size(265, 298);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Training: ";
@@ -124,7 +124,7 @@
             this.imageBox1.Location = new System.Drawing.Point(15, 22);
             this.imageBox1.Margin = new System.Windows.Forms.Padding(4);
             this.imageBox1.Name = "imageBox1";
-            this.imageBox1.Size = new System.Drawing.Size(217, 164);
+            this.imageBox1.Size = new System.Drawing.Size(242, 164);
             this.imageBox1.TabIndex = 5;
             this.imageBox1.TabStop = false;
             this.imageBox1.Click += new System.EventHandler(this.imageBox1_Click);
@@ -258,6 +258,7 @@
             this.webcamToolStripMenuItem.Name = "webcamToolStripMenuItem";
             this.webcamToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.webcamToolStripMenuItem.Text = "Webcam";
+            this.webcamToolStripMenuItem.Click += new System.EventHandler(this.webcamToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 

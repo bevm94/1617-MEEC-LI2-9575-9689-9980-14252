@@ -24,7 +24,9 @@ namespace face_id
         private Mat smoothedGrayFrame;
         private Mat cannyFrame;
         private bool state_webcam = false;
-
+        private CascadeClassifier face = new CascadeClassifier(Application.StartupPath + "\\haarcascade_frontalface_default.xml");
+        private CascadeClassifier face_best = new CascadeClassifier(Application.StartupPath + "\\haarcascade_frontalface_alt_tree.xml");
+        private CascadeClassifier eyes = new CascadeClassifier(Application.StartupPath + "\\haarcascade_eye.xml");
         public form_main()
         {
             InitializeComponent();
@@ -33,9 +35,6 @@ namespace face_id
             {
                 capWebcam = new VideoCapture();
                 capWebcam.ImageGrabbed += ProcessFrame;
-                //conditions to flip camera horizontally or vertically
-                //if (_capture != null) _capture.FlipHorizontal = !_capture.FlipHorizontal;
-                //if (_capture != null) _capture.FlipVertical = !_capture.FlipVertical;
             }
             catch (NullReferenceException excpt)
             {
@@ -43,9 +42,6 @@ namespace face_id
             }
             frame = new Mat();
             grayFrame = new Mat();
-            smallGrayFrame = new Mat();
-            smoothedGrayFrame = new Mat();
-            cannyFrame = new Mat();
         }
 
         private void ProcessFrame (object sender, EventArgs arg)
@@ -54,18 +50,9 @@ namespace face_id
             {
                 capWebcam.Retrieve(frame, 0);
 
-                //CvInvoke.CvtColor(frame, grayFrame, ColorConversion.Bgr2Gray);
-
-                //CvInvoke.PyrDown(grayFrame, smallGrayFrame);
-
-                //CvInvoke.PyrUp(smallGrayFrame, smoothedGrayFrame);
-
-                //CvInvoke.Canny(smoothedGrayFrame, cannyFrame, 100, 60);
+                CvInvoke.CvtColor(frame, grayFrame, ColorConversion.Bgr2Gray);
 
                 imageBox_frame.Image = frame;
-                //grayscaleImageBox.Image = grayFrame;
-                //smoothedGrayscaleImageBox.Image = smoothedGrayFrame;
-                //cannyImageBox.Image = cannyFrame;
             }
         }
 
