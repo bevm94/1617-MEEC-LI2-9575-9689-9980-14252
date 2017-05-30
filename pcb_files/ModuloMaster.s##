@@ -10025,6 +10025,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="DOUT8" library="display-hp" deviceset="HLMP6" device=""/>
 <part name="DOUT9" library="display-hp" deviceset="HLMP6" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="OUT9" library="con-ptr500" deviceset="AK300/2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10105,12 +10106,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="R1" gate="G$1" x="86.36" y="162.56" rot="R90"/>
 <instance part="DOUT5" gate="A" x="86.36" y="149.86"/>
 <instance part="GND14" gate="1" x="40.64" y="27.94" rot="R90"/>
-<instance part="OUT5" gate="-1" x="160.02" y="35.56"/>
-<instance part="OUT5" gate="-2" x="160.02" y="30.48"/>
-<instance part="OUT6" gate="-1" x="160.02" y="5.08"/>
-<instance part="OUT6" gate="-2" x="160.02" y="0"/>
+<instance part="OUT5" gate="-1" x="157.48" y="35.56"/>
+<instance part="OUT6" gate="-1" x="157.48" y="5.08" smashed="yes">
+<attribute name="NAME" x="156.21" y="5.969" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="OUT6" gate="-2" x="157.48" y="0"/>
 <instance part="R2" gate="G$1" x="170.18" y="35.56" rot="R180"/>
-<instance part="R3" gate="G$1" x="170.18" y="5.08" rot="R180"/>
+<instance part="R3" gate="G$1" x="170.18" y="5.08"/>
 <instance part="P+5" gate="VCC" x="10.16" y="170.18" rot="R90"/>
 <instance part="R4" gate="G$1" x="210.82" y="22.86" rot="R270"/>
 <instance part="R5" gate="G$1" x="210.82" y="-10.16" rot="R270"/>
@@ -10161,6 +10163,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="DOUT8" gate="A" x="350.52" y="-60.96" rot="R90"/>
 <instance part="DOUT9" gate="A" x="347.98" y="63.5" rot="R90"/>
 <instance part="GND27" gate="1" x="327.66" y="-60.96"/>
+<instance part="OUT9" gate="-2" x="157.48" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -10962,6 +10965,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="OUT5" gate="-1" pin="KL"/>
+<wire x1="162.56" y1="35.56" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -10973,22 +10977,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="OUT5" gate="-2" pin="KL"/>
 <pinref part="IN1" gate="G$1" pin="C"/>
-<wire x1="165.1" y1="30.48" x2="182.88" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="OUT9" gate="-2" pin="KL"/>
+<wire x1="162.56" y1="30.48" x2="182.88" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="OUT6" gate="-1" pin="KL"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="5.08" x2="175.26" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="IN2" gate="G$1" pin="A"/>
-<wire x1="175.26" y1="5.08" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="5.08" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="IN3" gate="G$1" pin="A"/>
 <junction x="182.88" y="5.08"/>
 </segment>
@@ -10997,7 +11002,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <pinref part="OUT6" gate="-2" pin="KL"/>
 <pinref part="IN2" gate="G$1" pin="C"/>
-<wire x1="165.1" y1="0" x2="182.88" y2="0" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="0" x2="182.88" y2="0" width="0.1524" layer="91"/>
 <pinref part="IN3" gate="G$1" pin="C"/>
 <junction x="182.88" y="0"/>
 </segment>

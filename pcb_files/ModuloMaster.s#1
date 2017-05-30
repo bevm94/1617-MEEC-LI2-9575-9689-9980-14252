@@ -10302,7 +10302,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="-30.48" y1="27.94" x2="-30.48" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<junction x="-30.48" y="27.94"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -11232,8 +11231,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="327.66" y1="-45.72" x2="327.66" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="342.9" y1="-45.72" x2="342.9" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="327.66" y="-40.64"/>
-<junction x="342.9" y="-40.64"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -11247,10 +11244,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="108,1,327.66,-40.64,N$53,,,,,"/>
-<approved hash="108,1,342.9,-40.64,N$53,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
