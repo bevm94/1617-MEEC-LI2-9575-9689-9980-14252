@@ -9448,11 +9448,11 @@ SMT- SWCH-08247</description>
 <sheets>
 <sheet>
 <plain>
-<text x="10.16" y="101.6" size="6.35" layer="91">Entradas</text>
+<text x="40.64" y="106.68" size="6.35" layer="91" rot="R180">Entradas</text>
 <text x="99.06" y="83.82" size="6.35" layer="91">Linhas CAN</text>
-<text x="12.7" y="200.66" size="6.35" layer="91">Alimentação</text>
+<text x="55.88" y="208.28" size="6.35" layer="91" rot="R180">Alimentação</text>
 <text x="205.74" y="203.2" size="6.35" layer="91">Saidas</text>
-<text x="96.52" y="53.34" size="6.35" layer="91">Linhas CAN saida</text>
+<text x="160.02" y="58.42" size="6.35" layer="91" rot="R180">Linhas CAN saida</text>
 <text x="78.74" y="142.24" size="3.81" layer="91">Circuito MCP25050 + MCP2551</text>
 </plain>
 <instances>
