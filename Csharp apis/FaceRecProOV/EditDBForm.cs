@@ -40,14 +40,26 @@ namespace MultiFaceRec
             }
         }
 
-        public void populate(string option)
+        void populate(string option)
         {
             panel1.Controls.Clear();
             string[] all_names;
             PictureBox[] pic_box_list;
             String[] pics_list;
-            pics_list = Directory.GetFiles(@"H:\brian\Documents\MEEC\lab_integrados_II\1617-MEEC-LI2-9575-9689-9980-14252\C#_api's\FaceRecProOV\bin\Debug\TrainedFaces", "*.bmp").OrderBy(f => f);
-            pics_list = Array.Sort(vogais);
+            pics_list = Directory.GetFiles(@"H:\brian\Documents\MEEC\lab_integrados_II\1617-MEEC-LI2-9575-9689-9980-14252\Csharp apis\FaceRecProOV\bin\Debug\TrainedFaces", "*.bmp");
+            pics_list = Array.Sort(pics_list, new AlphanumericComparatorFast());
+            for (int i = 0; i < pics_list.Length; i++)
+            {
+                var x_1 = pics_list[i];
+                var j = i;
+                while (j > 0 && pics_list[j - 1].CompareTo(x_1) > 0)
+                {
+                    pics_list[j] = pics_list[j - 1];
+                    j = j - 1;
+                }
+                pics_list[j] = x_1;
+            }
+
             string Allnames_file = File.ReadAllText(Application.StartupPath + "/TrainedFaces/TrainedLabels.txt");
             all_names = Allnames_file.Split('%');
             int x = 20;

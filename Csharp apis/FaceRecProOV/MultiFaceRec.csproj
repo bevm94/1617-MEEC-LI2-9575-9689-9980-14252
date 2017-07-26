@@ -76,6 +76,7 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlphanumericComparator.cs" />
     <Compile Include="BluetoothForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -67,8 +67,8 @@ namespace MultiFaceRec
             //String.Format("\\.\%s",);
             myPort.PortName = Convert.ToString(comboBox_port.Text);
             myPort.BaudRate = Convert.ToInt32(comboBox_brate.Text);
-            myPort.Parity = (Parity)(Parity)Enum.Parse(typeof(Parity), comboBox_parity.Text);
-            myPort.StopBits = (StopBits)(StopBits)Enum.Parse(typeof(StopBits), comboBox_stop.Text);
+            myPort.Parity = (Parity)Enum.Parse(typeof(Parity), comboBox_parity.Text);
+            myPort.StopBits = (StopBits)Enum.Parse(typeof(StopBits), comboBox_stop.Text);
             myPort.DataBits = Convert.ToInt16(comboBox_data.Text);
             myPort.Handshake = (Handshake)Enum.Parse(typeof(Handshake), comboBox_f_control.Text);
 
