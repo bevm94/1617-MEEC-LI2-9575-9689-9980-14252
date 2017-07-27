@@ -115,10 +115,14 @@ namespace MultiFaceRec
                 if (trainingImages.ToArray().Length != 0)
                 {
                     //TermCriteria for face recognition with numbers of trained images like maxIteration
-                    MCvTermCriteria termCrit = new MCvTermCriteria(ContTrain, 2);
+                    MCvTermCriteria termCrit = new MCvTermCriteria(ContTrain, 0.001);
 
                     //Eigen face recognizer
-                    EigenObjectRecognizer recognizer = new EigenObjectRecognizer(trainingImages.ToArray(), labels.ToArray(), 1, ref termCrit);
+                    EigenObjectRecognizer recognizer = new EigenObjectRecognizer(
+                        trainingImages.ToArray(),
+                        labels.ToArray(),
+                        2500,
+                        ref termCrit);
                     name = recognizer.Recognize(result);
 
                     //Set the region of interest on the faces
